@@ -12,10 +12,11 @@
 // null 
 
 // STEP 3
-let appleBush = (5 + 10) * (20 / 2) + 100;
-let anExpression = 3 * (4 / 5) + 6;
+// let appleBush = (5 + 10) * (20 / 2) + 100;
+// let anExpression = 3 * (4 / 5) + 6;
 
 // STEP 4
+
 
 // STEP 5
 
