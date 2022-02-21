@@ -16,6 +16,16 @@
 // let anExpression = 3 * (4 / 5) + 6;
 
 // STEP 4
+// let firstName;
+// let lastName;
+// let address;
+// let City;
+// let State;
+// let zipCode;
+// let yourAge;
+// let referralSource;
+// let mayWeContactYou;
+
 
 
 // STEP 5
