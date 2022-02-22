@@ -16,8 +16,8 @@
 // let anExpression = 3 * (4 / 5) + 6;
 
 // STEP 4
-// const firstName;
-// const lastName;
+// let firstName;
+// let lastName;
 // let address;
 // let City;
 // let State;
