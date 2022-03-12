@@ -8,19 +8,43 @@
 //     window.document.write("You chose " + applesTomorrow + " apples tomorrow over " + applesToday + " apples today.");
 // }
 
+// REVIEW - LARGER OR SMALLER?
+// let num1 = parseInt(prompt('Enter the first number'));
+// let num2 = parseInt(prompt('Enter the second number'));
+// if (num1 < num2) {
+//     document.write(`${num2} is larger than ${num1}`) 
+//     } else if (num1 > num2) {
+//         document.write(`${num1} is larger than ${num2}`)
+//     } else {
+//         document.write(`Both numbers are equal.`)
+
+// }         
+
+
 // THE WORD TRANSLATOR
-// let languageCode = window.prompt('Enter language code of choice: es, de, en, or fr');
+// let languageCode = prompt('Enter language code of choice: es, de, en, or fr');
 // if (languageCode === "es") {
-//     window.console.log('Hello World translated in Spanish is: Hola Mundo');
+//     console.log('Hello World translated in Spanish is: Hola Mundo');
 // } else if (languageCode === "de") {
-//     window.console.log('Hello World translated in German is: Hallo Welt');
+//     console.log('Hello World translated in German is: Hallo Welt');
 // } else if (languageCode === "en") {
-//     window.console.log('Hello World translated in English is: Hello World');
+//     console.log('Hello World translated in English is: Hello World');
 // } else if (languageCode === "fr") {
-//     window.console.log('Hello World translated in French is: Bonjour le monde');
+//     console.log('Hello World translated in French is: Bonjour le monde');
 // }else {
-//     window.console.log('Hello World translated in English is: Hello World');
+//     console.log('Hello World translated in English is: Hello World');
 // }
+
+// REVIEW - THE WORD TRANSLATOR
+// let hello = prompt('What language do you want to see "Hello World" in? (es, de, en, fr');
+// if (hello === 'es') {
+//     console.log('Hello World translated in Spanish is: Hola Mundo');
+// } else if (hello === 'de') {
+//     console.log('Hello World translated in German is: Hallo Welt');
+// } else if (hello === '') {
+//     console.log('Hello World translated in German is: Hallo Welt');
+// }
+
 
 // THE "COIN FLIP" GAME
 // let randomNum = Math.round(Math.random() * 10);
@@ -41,6 +65,18 @@
 //     }
 // }
 
+// REVIEW - THE "COIN FLIP" GAME
+// let coinFlip = Math.round(Math.random());
+// let choose = prompt('Choose heads of tails (h or t');
+// if (coinFlip === 0) {// tails
+//     if (choose === 'h') {
+//         document.write('The flip was tails and you chose heads, you lose')
+//     } else {
+//         document.write('The flip was tails and you chose tails, you win')
+//     }
+// } else if (coinFlip)
+
+
 // console.log(randomNum);
 
 // THE "GRADE ASSIGNER" APPLICATION
@@ -60,6 +96,16 @@
 //     } else  if  (userInput < 60) {
 //         window.console.log('You received an F');
 //     } 
+
+// REVIEW - THE "GRADE ASSIGNER" APPLICATION
+// let num = parseInt(prompt('Enter a number between 1 and 100'));
+// if (num < 1 || num > 100) {
+//     alert('Only numbers between 1 and 100 are accepted.')
+// } else {
+//     if (num >= 90) {
+//         console.log('You received an A')
+//     }           
+// }
 
 // THE "HITCHHIKER'S GUIDE TO THE GALAXY" GAME
 // let userResponse = window.prompt('Hello friend. Are you ready to play this game, yes/no?').toLowerCase();
@@ -92,3 +138,6 @@
 // } else if (userResponse === 'no' || userResponse !== 'yes') {
 //     alert('Thank you and please come back to play another time.');
 // }
+
+// REVIEW - THE "HITCHHIKER'S GUIDE TO THE GALAXY" GAME
+

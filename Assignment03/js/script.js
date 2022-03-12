@@ -128,3 +128,13 @@
 // document.write('Years: ' + years + '<br>');
 // document.write('Future value: $' + futureValue);
 
+let futureValue;
+let investment;
+let rate;
+let years;
+let i;
+futureValue = investment;
+
+for (i = 1; i <= years; i++) {
+    futureValue = futureValue + (futureValue * rate / 100);
+}
