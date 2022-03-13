@@ -1,3 +1,13 @@
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: inline;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 @mixin imageGrid($qty, $margin) {
     width: ((100% - (($qty - 1) * $margin )) / $qty);
     &:nth-child(n) {
@@ -7,5 +17,11 @@
     &:nth-child(#{$qty}n) {
         margin-bottom: 0;
         margin-right: 0;
+    }
+}
+
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content;
     }
 }

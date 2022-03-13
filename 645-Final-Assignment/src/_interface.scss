@@ -1,0 +1,7 @@
+.grid {
+    @include clearfix;
+    .item {
+        float: left;
+        @include imageGrid(2, 1%);
+    }
+}

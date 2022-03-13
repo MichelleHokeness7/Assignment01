@@ -20,21 +20,12 @@ header h3                   {color:$darkgrey;font-weight:400;font-size:2em;line-
 #content #products h4       {line-height:1em;}
 #content #testimonials      {width:460px;float:right;}
 
-/* FOOTER */
-.greybar                    {width:100%;height:90px;background:$backgroundGreybar;clear:both;padding-top:30px;}
-footer                      {width:100%;height:120px;background:$backgroundFooter;text-align:center;color:$text-color;padding-top:50px;}
-.social-media               {margin:0 auto;width:165px;}
-.social-media div           {float:left;margin-right:5px;}
-.social-media a             {display:block;width:36px;height:36px;text-indent:-9999px;}
-.social-media div.one       {background:url('../images/social-media.png') 0 0;}
-.social-media div.two 	    {background:url('../images/social-media.png') -38px 0;}
-.social-media div.three     {background:url('../images/social-media.png') -76px 0;}
-.social-media div.four 	    {background:url('../images/social-media.png') -114px 0;}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width:959px) {
-main 						{width:768px;}
-figure						{width:inherit;height:140px;float:none;background-position:center;}
+main {width:768px;}
+figure	{width:inherit;height:140px;float:none;background-position:center;}
 nav 						{width:inherit;height:50px;float:none;text-align:center;}
 nav ul						{margin-top:0;}
 nav ul li					{font-size:1em;margin:0 10px;}
@@ -46,11 +37,27 @@ header h2 					{font-size:1.5em;}
 }
 
 @media screen and (max-width:767px) {
-main 						{width:460px;}
-nav ul li					{font-size:0.8em;margin:0 5px;}
-header h1					{font-size:2em;}
-header h2 					{font-size:1em;}
-header img			 		{margin-bottom:100px;}
+main {
+    width:460px;
+}
+
+nav ul li {
+    font-size:0.8em;
+    margin:0 5px;
+}
+
+header h1 {
+    font-size:2em;
+}
+
+header h2 {
+    font-size:1em;
+}
+
+header img {
+    margin-bottom:100px;
+}
+
 header h3					{font-size:1.5em;}
 #headline h1 				{font-size:2em;padding-top:50px;}
 #content #products,
