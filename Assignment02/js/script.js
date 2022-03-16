@@ -66,15 +66,15 @@
 // }
 
 // REVIEW - THE "COIN FLIP" GAME
-// let coinFlip = Math.round(Math.random());
-// let choose = prompt('Choose heads of tails (h or t');
-// if (coinFlip === 0) {// tails
-//     if (choose === 'h') {
-//         document.write('The flip was tails and you chose heads, you lose')
-//     } else {
-//         document.write('The flip was tails and you chose tails, you win')
-//     }
-// } else if (coinFlip)
+let coinFlip = Math.round(Math.random());
+let choose = prompt('Choose heads of tails, (h or t)');
+if (coinFlip === 0) {// tails
+    if (choose === 'h') {
+        document.write('The flip was tails and you chose heads, you lose')
+    } else {
+        document.write('The flip was tails and you chose tails, you win')
+    }
+} else if (coinFlip);
 
 
 // console.log(randomNum);
