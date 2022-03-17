@@ -50,7 +50,7 @@
 
 
 
-// THE ROCK, PAPER, SCISSORS GAME
+// 2. THE ROCK, PAPER, SCISSORS GAME
 // function displayTitle() {
 //     alert('Welcome! let\'s play rock, paper, scissors.');
 // }
@@ -111,7 +111,7 @@
 
 
 
-// THE ROCK, PAPER, SCISSORS GAME - take 2
+// 2. THE ROCK, PAPER, SCISSORS GAME - take 2
 // let compChoice = Math.round(Math.random() * 2);
 // let choice0 = 'r';
 // let choice1 = 'p';
@@ -174,9 +174,22 @@
 // }
 // main();
 
-// THE BASIC CALCULATOR
+// 3. THE BASIC CALCULATOR
+// alert('What calculations would you like to do?');
+// function calc(numbers) {
+//     let base = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//         base += Number(arguments[i]);
+//     }
+//     return base;
+// }
+// console.log(calc(4, 20, 100,));
 
-
+// import * as calculate from './modules/calculate.js';
+// console.log(calculate.add(10, 10));
+// console.log(calculate.sub(10, 10));
+// console.log(calculate.mult(10, 10));
+// console.log(calculate.divide(10, 10));
 
 
 
