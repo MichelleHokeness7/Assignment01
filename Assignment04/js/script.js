@@ -51,62 +51,69 @@
 
 
 // 2. THE ROCK, PAPER, SCISSORS GAME
-// function displayTitle() {
-//     alert('Welcome! let\'s play rock, paper, scissors.');
+function displayTitle() {
+    alert('Welcome! let\'s play rock, paper, scissors.');
+}
+
+function match(userChoice, computerChoice) {
+    if (userChoice === 'r') {
+        if (computerChoice === 's') {
+            return ('You win!');
+        }
+    } else if (userChoice === computerChoice) {
+        return ('It\'s a tie!');
+    } else {
+        return ('You lose this round.');
+    }
+}
+
+// function add(x, y) {
+//     return x + y
+// }
+// const add2 = (x, y) => {
+//     return x + y
+
+//     let neverHit = 2
 // }
 
-// function playGame() {
-//     let computerChoice = Math.round(Math.random() * 2); // * 2 gives a random number 0, 1, 2
-//     let choice;
-//     // console.log(computerChoice);
-//     alert('Here we go!');
+function playGame() {
+    // let result = add(2, 2)
+    // let variableFunction = add
+    // let four = variableFunction(2, 2)
+    // console.log(four) // 4
 
-//     function match(userChoice, computerChoice) {
-        
-//         if (userChoice === 'r') {
-//             if (computerChoice === 's') {
-//                 return ('You win!');
-//             }
-//         } else if (userChoice === computerChoice) {
-//             return ('It\'s a tie!');
-//         } else {
-//             return ('You lose this round.');
-//         }
-//     }
-    
+    console.log('result', result)
+    let computerChoice = Math.round(Math.random() * 2); // * 2 gives a random number 0, 1, 2
+    // console.log(computerChoice);
+    let choice = prompt('Enter r for rock, p for paper, s for scissors.');
+    alert('Here we go!');
+    if (computerChoice === 0) {
+            computerChoice = 'r';
+    } else if (computerChoice === 1) {
+            computerChoice = 'p';
+    } else if (computerChoice === 2) {
+            computerChoice = 's';
+    } else {
+            alert('Please enter r, p, or s');
+    }
 
-// choice = prompt('Enter r for rock, p for paper, s for scissors.');
-//     if (computerChoice === 0) {
-//             computerChoice = 'r';
-//     } else if (computerChoice === 1) {
-//             computerChoice = 'p';
-//     } else if (computerChoice === 2) {
-//             computerChoice = 's';
-//     } else {
-//             alert('Please enter r, p, or s');
-//     }
+    let choice1 = choice;
+    let choice2 = computerChoice;
 
-//     let choice1 = choice;
-//     let choice2 = computerChoice;
+    while (playAgain === 'y') {
+    }
+}
 
-//     while (playAgain === 'y') {
-
-   
-    
-    
-// }
-// }
-
-// function main() {
-//     displayTitle();
-//     let playAgain = 'y';
-//     while (playAgain === 'y') {
-//         playGame();
-//         playAgain = prompt('Do you want to play again? y/n');
-//     }
-//     alert('Thank you for playing the game.');
-// }
-// main();
+function main() {
+    displayTitle();
+    let playAgain = 'y';
+    while (playAgain === 'y') {
+        playGame();
+        playAgain = prompt('Do you want to play again? y/n');
+    }
+    alert('Thank you for playing the game.');
+}
+main();
 // playGame();
 
 
