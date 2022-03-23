@@ -10,6 +10,19 @@
 //     }
 // }
 
+// REVIEW
+// let num = parseInt(prompt('How many times do you want to flip the coin?'));
+
+// for (let i = 1; i <= num; i++) {
+//     let coinFlip = Math.round(Math.random());
+//     if (coinFlip) {
+//         console.log('Heads');
+//     } else {
+//         console.log('Tails');
+//     }
+// }
+
+
 // 2 - THE "COIN FLIP STREAK" GAME
 // let coinFlip;
 // let again = 0;
@@ -22,11 +35,30 @@
 //     }
 // } while (coinFlip === 0);
 
+//REVIEW
+let coinFlip;
+
+do {
+    coinFlip = Math.round(Math.random());
+    if (coinFlip) {
+        console.log('Heads');
+    } else {
+        console.log('Tails');
+    }
+} while (coinFlip);
+
+
 // 3 - LOOPING A TRIANGLE
 // let pound;
 // let hash = ['#', '##', '###', '####', '#####', '######', '#######'];
 // for (pound in hash) {
 //     console.log(hash[pound]);
+// }
+
+// REVIEW
+// let triangle = '';
+// for (let i = 0; i < 7; i++) {
+//     console.log(triangle += '#');
 // }
 
 // 4 - ODD OR EVEN
@@ -37,6 +69,15 @@
 //     evenNumbers = evenNumbers + 2;
 //     console.log(evenNumbers + ' is even.');
 //     console.log(oddNumbers + ' is odd.');
+// }
+
+// REVIEW
+// for (let i = 0; i <= 20; i++) {
+//     if ((i % 2) === 0) {
+//         console.log(`${i} is even`);
+//     } else {
+//         console.log(`${i} is odd`);
+//     }
 // }
 
 // 5 - MARCO! POLO!
@@ -52,11 +93,32 @@
 //     }
 // }
 
+// REVIEW
+let items = '';
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+
+    } else if (i % 3 === 0) {
+
+    } else if (i % 5 === 0) {
+
+    } else {
+
+    }
+}
+
 // 6 - COUNTDOWN
 // let i;
 // let input = parseInt(prompt('Enter a number between 1 and 100 where the countdown will start.'));
 // for (let i = input; i > 0; i--) {
 //     console.log(i);
+// }
+
+// REVIEW
+// let num = parseInt(prompt('Enter a number to begin countdown sequence'));
+// while (num >= 0) {
+//     console.log(num);
+//     num--;
 // }
 
 
@@ -80,6 +142,31 @@
 //         again = prompt('Repeat entries - (y or n)');
 //     }            
 // } while (again === "y");
+
+// REVIEW
+let miles;
+let gallons;
+let mpg;
+let again = " ";
+
+do {
+    miles = parseFloat(prompt('Enter miles driven'));
+    gallons = parseFloat(prompt('Enter size of gas tank in gallons'));
+    if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0) {
+        mpg = miles / gallons;
+        document.write('Miles per gallon: ' + parseInt(mpg, 10) + '<br>');
+    } else {
+        alert('One or both entries is invalid.');
+    }
+    do {
+        again = prompt('Repeat entries - (y or n)');
+    if (again !== "y" && again !== "n") {
+        again = prompt('Repeat entries - (y or n)');
+    }     
+    } while (true);
+           
+} while (again === "y");
+console.log
 
 
 

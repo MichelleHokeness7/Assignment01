@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         h1 {margin-bottom: 30px;}
@@ -18,35 +18,44 @@
     <h1>Employee Management System</h1>
     
     <form id="empForm">
-          <div class="mb-3">
-            <label for="formGroupExampleInput">8-Digit Employee ID</label>
-            <input type="text" class="form-control" id="id" required minlength="8" maxlength="8">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2">Full Name</label>
-            <input type="text" class="form-control" id="name" required>
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput">4-Digit Extension</label>
-            <input type="text" class="form-control" id="ext" required minlength="4" maxlength="4">
-          </div>
+      <form id="empForm" action = "javascript:employeeForm()"> 
+        <div class="mb-3">
+          <label for="formGroupExampleInput">8-Digit Employee ID</label>
+          <input type="text" class="form-control" id="id" required minlength="8" maxlength="8">
+        </div>
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput2">Full Name</label>
+          <input type="text"n class="form-control" id="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput">4-Digit Extension</label>
+          <input type="text" class="form-control" id="ext" required minlength="4" maxlength="4">
+        </div>
+           
+          
+          
           <div class="mb-3">
             <label for="formGroupExampleInput2">Email</label>
             <input type="text" class="form-control" id="email" required>
           </div>
 
-          <label for="departments1">Departments</label>
-          <select name="department" id="department">
-            <option value="administrative">Administrative</option>
-            <option value="engineering">Engineering</option>
-            <option value="executive">Executive</option>
-            <option value="marketing">Marketing</option>
-            <option value="qualityAssurance">Quality Assurance</option>
-            <option value="sales">Sales</option>
-          </select>
-          
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Department</label><br>
+            <select class="form-select" aria-label="Default select example" name="Department" id="department" required>
+              <option value="">Select</option>
+              <option value="Administrative">Administrative</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Executive">Executive</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Quality Assurance">Quality Assurance</option>
+              <option value="Sales">Sales</option>
+            </select>
+        </div>
           <!-- Add employee button -->
           <button type="submit" class="btn btn-primary btn-sm" id="submit">Add Employee</button>
+          <output id="output"></output>
 
     </form>
 </body>
