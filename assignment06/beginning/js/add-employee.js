@@ -53,12 +53,12 @@ emailAddress = $('email');
 department = $('department');
 // submit = $('submit');
 output = $('loginDetails');
-let formElement = $('submit');
+formElement = $('submit');
 
 
 
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
-let formElement = window.open('index.html', 'empInfoForm');
+formElement = window.open('index.html', 'empInfoForm');
 
 
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
