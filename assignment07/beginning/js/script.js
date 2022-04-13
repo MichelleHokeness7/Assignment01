@@ -2,8 +2,7 @@
 let form = document.getElementById('addForm');
 let empTable = document.getElementById('employees')
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
-let employeeCount = document.getElementById('empCount');
-let counter = '';
+let counter;
 
 // ADD EMPLOYEE
 form.addEventListener('submit', (e) => {
@@ -18,6 +17,7 @@ form.addEventListener('submit', (e) => {
      
     // INSERT A NEW ROW AT THE END OF THE EMPLOYEES TABLE
     let row = empTable.insertRow();
+    row.className = 'table table-striped';
 
     // INSERT A CELL FOR EACH ITEM WITHIN THE NEW ROW
     let cellID = row.insertCell(0);
@@ -59,15 +59,18 @@ form.addEventListener('submit', (e) => {
 
     // INCREMENENT THE NUMBER OF EMPLOYEES IN THE TABLE
     for (let i = 0; i < row.length; i++) {
+        let employeeCount = document.getElementById('empCount');
         counter++;
     }
 });
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {
+    // CONFIRM THE DELETION
     if (confirm('Are you sure you want to delete this employee?')) {
-        // INSERT A NEW ROW AT THE END OF THE EMPLOYEES TABLE
-        empTable.deleteRow(empTable);
+        // let td = e.target.parentElement;
+        // let tr = td.parentElement
+        empTable.deleteRow(this);
 
     
     }
