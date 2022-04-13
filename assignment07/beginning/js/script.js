@@ -2,7 +2,8 @@
 let form = document.getElementById('addForm');
 let empTable = document.getElementById('employees')
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
-let counter;
+let output = document.getElementById('empCount');
+let counter = 0;
 
 // ADD EMPLOYEE
 form.addEventListener('submit', (e) => {
@@ -58,8 +59,8 @@ form.addEventListener('submit', (e) => {
     document.getElementById("id").focus();
 
     // INCREMENENT THE NUMBER OF EMPLOYEES IN THE TABLE
-    for (let i = 0; i < row.length; i++) {
-        let employeeCount = document.getElementById('empCount');
+    for (let i = 0; i < form.length; i++) {
+        // let employeeCount = document.getElementById('empCount');
         counter++;
     }
 });
@@ -70,7 +71,8 @@ empTable.addEventListener('click', (e) => {
     if (confirm('Are you sure you want to delete this employee?')) {
         // let td = e.target.parentElement;
         // let tr = td.parentElement
-        empTable.deleteRow(this);
+        
+        empTable.deleteRow(e.target.closest('tr'));
 
     
     }
