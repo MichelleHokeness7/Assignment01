@@ -77,3 +77,4 @@ empTable.addEventListener('click', (e) => {
     
     }
 })
+
