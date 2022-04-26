@@ -84,15 +84,17 @@
 // let movie = movies.filter((item) => {
 //     return typeof item === 'string';
 // });
-// console.log(movie);   
+// console.log(movie);
+
+// OR
 
 // let movies = [['The Pelican Brief',1], ['Clash of the Titans \'81',2], ['French Kiss',3], ['Legend 1985',4], ['Resident Evil',5]];
-// movies.map((item) => {
-//     let movieTitles = movies.filter((item) => {
-//         return typeof item !== 'number'
+// for (let i = 0; i < movies.length; i++) {
+//     movies.filter((item) => {
+//         return typeof item === 'string';
 //     })
-//     console.log(movieTitles);
-// })
+//     console.log(movies[i][0])
+// }
 
 
 //STEP 14
@@ -120,8 +122,8 @@
 // });
 // console.log(numsFunction);
 //STEP 17
-let nums = [1, 3, 5, 7, 9, 11, 13, 15, 7, 19];
-let largestNum = nums.find((value) => {
-    return value > 15;
-});
-console.log(largestNum);
+// let nums = [1, 3, 5, 7, 9, 11, 13, 15, 7, 19];
+// let largestNum = nums.find((value) => {
+//     return value > 15;
+// });
+// console.log(largestNum);
