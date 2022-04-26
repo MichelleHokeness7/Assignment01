@@ -106,7 +106,13 @@
 // showEmployee();
 
 //STEP 15
-
+// let randomArr = [58, '', 'abcd', true, null, false, 0];
+// let results = randomArr.filter((value) => {
+//     if (value !== '' || value !== null || value !== 0 || value !== false) {
+//         return value;
+//     }
+// })
+// console.log(results([58, '', 'abcd', true, null, false, 0]));
 //STEP 16
 // let nums = [1, 3, 5, 7, 9, 11, 13, 15, 7, 19];
 // let numsFunction = nums.find((value) => {
