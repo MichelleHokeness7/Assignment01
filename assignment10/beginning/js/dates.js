@@ -37,7 +37,7 @@
 // console.log('0 = Sunday\n1 = Monday\n2 = Tuesday\n3 = Wednesday\n4 = Thursday\n5 = Friday\n6 = Saturday');
 
 //STEP 5
-let d = new Date();
-console.log(d.getDay());
-console.log('------------');
-console.log('0 = Sunday\n1 = Monday\n2 = Tuesday\n3 = Wednesday\n4 = Thursday\n5 = Friday\n6 = Saturday');
+// let d = new Date();
+// console.log(d.getDay());
+// console.log('------------');
+// console.log('0 = Sunday\n1 = Monday\n2 = Tuesday\n3 = Wednesday\n4 = Thursday\n5 = Friday\n6 = Saturday');
