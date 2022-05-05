@@ -16,3 +16,5 @@
 // console.log(Math.min(userInput));
 
 //STEP 5
+// let userInput = prompt('Please enter a number');
+// console.log(Math.sqrt(userInput));
