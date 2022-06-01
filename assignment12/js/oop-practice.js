@@ -90,3 +90,47 @@
 // const animal1 = new Animal('cat', 'Manx', 'Black','12 in tall', '14 - 16 in' );
 // animal1.speak();
 // STEP 9
+class Words {
+    constructor(word) {
+        this._word = word;
+        this._paragraph = [
+            'Eventually',
+            'all',
+            'things',
+            'fall',
+            'into',
+            'place',
+            '.',
+            'Until',
+            'then',
+            ',',
+            'laugh',
+            ' at',
+            'the',
+            'confusion',
+            ',',
+            'live',
+            'for',
+            'the',
+            'moments',
+            ',',
+            'and',
+            'know',
+            'everything',
+            'happens',
+            'for',
+            'a',
+            'reason',
+            '.'                        
+        ]
+    }
+    findWords = function(word) {
+        if (this._paragraph === 'for') {
+            for (let i = 0; i < this._paragraph.length; i++) {
+                alert(`This word was found ${this._paragraph[i]} times`)
+            }
+        }
+    }
+}
+const wordFor = new Words('for');
+wordFor.findWords();
